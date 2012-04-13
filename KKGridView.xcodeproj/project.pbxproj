@@ -323,6 +323,40 @@
 			};
 			name = Release;
 		};
+		B138D8DB153807BC00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		B138D8DC153807BC00D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ARC_MIGRATION = donothing;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				DSTROOT = /tmp/KKGridView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KKGridView/KKGridView-Prefix.pch";
+				INSTALL_PATH = "/../BuildProductsPath/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+			};
+			name = AppStore;
+		};
 		B1B99054149AE13F00F909A1 /* Ad-Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +399,7 @@
 			buildConfigurations = (
 				1A61BE1A13DCAF1F00AB4243 /* Debug */,
 				1A61BE1B13DCAF1F00AB4243 /* Release */,
+				B138D8DB153807BC00D1BCCA /* AppStore */,
 				B1B99054149AE13F00F909A1 /* Ad-Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -375,6 +410,7 @@
 			buildConfigurations = (
 				1A61BE1D13DCAF1F00AB4243 /* Debug */,
 				1A61BE1E13DCAF1F00AB4243 /* Release */,
+				B138D8DC153807BC00D1BCCA /* AppStore */,
 				B1B99055149AE13F00F909A1 /* Ad-Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
